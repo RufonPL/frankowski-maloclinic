@@ -141,10 +141,12 @@
          
                 <?php if (get_locale() == 'pl_PL') { ?>
                      <h3><?php the_field('1-contact-box-pl', 'option' , pll_current_language('pl_PL')); ?></h3>
-                     <p><?php the_field('2-contact-box-pl', 'option' , pll_current_language('pl_PL')); ?><p>
+                    <a href="tel:<?php echo str_replace(' ', '', get_field('2-contact-box-pl', 'option' , pll_current_language('pl_PL'))); ?>">
+                         <?php the_field('2-contact-box-pl', 'option' , pll_current_language('pl_PL')); ?>
+                     </a>
                 <?php } elseif  (get_locale() == 'en_GB') {?>
                      <h3><?php the_field('1-contact-box', 'option'); ?></h3>
-                     <p><?php the_field('2-contact-box', 'option'); ?><p>
+                     <a><?php the_field('2-contact-box', 'option'); ?></a>
                 <?php }  ?>
             </div>
           </div>
@@ -153,12 +155,20 @@
             <div class="text">
                 <?php if (get_locale() == 'pl_PL') { ?>
                      <h3><?php the_field('1.1-contact-box-pl', 'option' , pll_current_language('pl_PL')); ?></h3>
-                     <p><?php the_field('2.2-contact-box-pl', 'option' , pll_current_language('pl_PL')); ?><p>
-                     <p><?php the_field('2.2-contact-box-second-pl', 'option' , pll_current_language('pl_PL')); ?><p>
+                     <a href="tel:<?php echo str_replace(' ', '', get_field('2.2-contact-box-pl', 'option' , pll_current_language('pl_PL'))); ?>">
+                         <?php the_field('2.2-contact-box-pl', 'option' , pll_current_language('pl_PL')); ?>
+                     </a>
+                    <a href="tel:<?php echo str_replace(' ', '', get_field('2.2-contact-box-second-pl', 'option' , pll_current_language('pl_PL'))); ?>">
+                         <?php the_field('2.2-contact-box-second-pl', 'option' , pll_current_language('pl_PL')); ?>
+                     </a>
                 <?php } elseif  (get_locale() == 'en_GB') {?>
                      <h3><?php the_field('1.2-contact-box', 'option'); ?></h3>
-                     <p><?php the_field('2.2-contact-box', 'option'); ?><p>
-                     <p><?php the_field('2.2-contact-box-second', 'option'); ?><p>
+                    <a href="tel:<?php echo str_replace(' ', '', get_field('2.2-contact-box', 'option')); ?>">
+                         <?php the_field('2.2-contact-box', 'option'); ?>
+                     </a>
+                    <a href="tel:<?php echo str_replace(' ', '', get_field('2.2-contact-box-second', 'option')); ?>">
+                         <?php the_field('2.2-contact-box-second', 'option'); ?>
+                     </a>
                 <?php }  ?>
             </div>
           </div>
