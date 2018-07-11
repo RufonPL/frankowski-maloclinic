@@ -786,6 +786,10 @@ div#button3>a>p{
     padding: 55px 1px 38px 1px;
     background: #333333;
 }
+.bottom-footer .columns:last-of-type p {
+    /*font-size: 10px;*/
+    white-space: nowrap;
+}
 .copyright > .container > .col-xs-12.col-sm-6.col-md-6.col-lg-6 > p {
     color: #fff;
 }
@@ -797,7 +801,7 @@ div#button3>a>p{
 }
 .icon-footer{
 		float: left;
-		width: 25%;
+		width: 20%;
 }
 .footer-tekst {
     width: 75%;
@@ -810,9 +814,12 @@ div#button3>a>p{
     margin: 0;
 }
 .footer-tekst>p {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 700;
     color: #fff;
+}
+.logo-footer {
+    text-align:center;
 }
 .logo-footer>img {
     padding: 12px 1px 1px 1px;
@@ -1614,3 +1621,19 @@ body > div.top-bar-2 > div > div > div:nth-child(2) > div:nth-child(2) { margin-
 .facebook_slider_show { margin-right: -290px !important; }
 .fb-link { width: 50px; height: 50px; position: absolute;  right: 0; top: 50%; margin-top: -285px; z-index: 100000;}
 .fb-link > div {  width:50px; height: 50px; top: 50%; margin-top: -295px; position: absolute;}
+
+
+.pc-pricetable tr td:first-of-type,
+.pc-pricetable tr th:first-of-type{
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px 0 1px 1px;
+}
+
+.pc-pricetable tr td:last-of-type,
+.pc-pricetable tr th:last-of-type{
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px 1px 1px 0;
+    text-align: right;
+}

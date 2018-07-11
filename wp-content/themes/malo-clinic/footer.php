@@ -2,13 +2,10 @@
 <div class="bottom-footer">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <div class="logo-footer"><img src="<?php the_field('logo-footer', 'option'); ?>"> </div>
-      </div>
         <?php
             if( have_rows('footer', 'option') ):
               while ( have_rows('footer', 'option') ) : the_row(); ?>
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 columns">
+                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 columns">
                     <div class="icon-footer"> <img src="<?php the_sub_field('columns-icon', 'option'); ?>"> </div>
                     <div class="footer-tekst">
                       <h2> <?php the_sub_field('columns-name', 'option'); ?> </h2>
@@ -19,6 +16,9 @@
               else :
               endif;
             ?>
+              <div class="col-xs-12">
+                    <div class="logo-footer"><img src="<?php the_field('logo-footer', 'option'); ?>"> </div>
+              </div>
       </div>
   </div>
 </div>

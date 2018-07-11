@@ -2,7 +2,9 @@
 
 <div class="container">
     <div class="row">
-
+        <div class="col-sm-12" style="text-align: center; margin-bottom: 3rem;">
+            <h1>Metamorfozy Uśmiechu MALO CLINIC WARSAW</h1>
+        </div>
         <div class="col-sm-12 col-xs-12 col-md-8 col-lg-8" >
             <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                 <div style="border: 1px solid rgb(196, 196, 196);margin-bottom: 10px;padding: 1px 15px 27px 15px;">
